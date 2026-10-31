@@ -29,10 +29,10 @@
 # =============================================================================
 
 # 站点正式访问地址（影响 sitemap、RSS、分享链接等绝对 URL，部署前务必与真实域名一致）
-baseURL = 'https://daily.yybb.us/'
+baseURL = 'https://j4s.dpdns.org/'
 locale = 'zh-cn'
 defaultContentLanguage = 'zh'
-title = 'AIOVTUE-雪'          # 站点名称（浏览器标题、页脚版权等）
+title = 'J4s个人主页'          # 站点名称（浏览器标题、页脚版权等）
 theme = 'aiovtue'           # 主题目录：themes/aiovtue/
 hasCJKLanguage = true      # 启用中文分词（搜索、摘要等）
 enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layouts/robots.txt）
@@ -88,9 +88,9 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
 # 站点参数（主题通过 .Site.Params 读取）
 # =============================================================================
 [params]
-  subtitle = '雪'                              # 副标题（首页标题后缀）
-  description = '雨是神的烟花'                  # 站点默认描述（SEO、分享卡片）
-  primaryColor = '#DF9193'                     # 主题主色
+  subtitle = '喵'                              # 副标题（首页标题后缀）
+  description = 'J4s的个人主页'                  # 站点默认描述（SEO、分享卡片）
+  primaryColor = '#5E90B7'                     # 主题主色
   favicon = '/hero/avatar.png'
   defaultCover = '/hero/tt3.png'               # 文章默认头图（无 cover 时使用）
   math = false                                 # 默认关闭；单篇 front matter 写 math: true 启用构建时 KaTeX 渲染
@@ -103,7 +103,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
   # --- 友链页 ---
   [params.links]
     layout = 'preview'                        # preview：卡片截图 | simple：长条头像+悬停预览
-    rssEnable = true                         # 友链页「朋友动态」RSS 展示（关闭时不拉取 RSS）
+    rssEnable = false                         # 友链页「朋友动态」RSS 展示（关闭时不拉取 RSS）
     footerEnable = false                      # 全站页脚友链列表展示
 
   # --- 动态页（每条动态：content/moments/*.md，front matter 仅需 date）---
@@ -113,9 +113,9 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
 
   # --- 追番页（Bilibili 追番列表，构建时拉取 data/bangumi.json）---
   [params.bangumi]
-    enable = true                             # 是否启用追番页与构建时数据拉取
-    vmid = '334423445'                        # Bilibili 用户 UID（追番列表需空间公开）
-    quote = '生命不息，追番不止！'              # 页面引言
+    enable = false                             # 是否启用追番页与构建时数据拉取
+    vmid = '0'                        # Bilibili 用户 UID（追番列表需空间公开）
+    quote = '0'              # 页面引言
 
   # --- Excalidraw 画板文章（content/excalidraw/<slug>/index.md + *.excalidraw）---
   # 独立栏目，首页/归档/搜索与 posts 合并展示；单页为交互式只读查看器
@@ -128,10 +128,10 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
 
   # --- 侧栏 / 关于页作者信息 ---
   [params.author]
-    name = '作者名称'
+    name = 'J4s'
     avatar = '/hero/avatar.png'
     statusEmoji = '🌸'     # 头像角标
-    statusMessage = '发呆ing...'
+    statusMessage = '学习ing...'
 
   # --- 首页 Hero 大图 / 视频轮播 ---
   # 媒体文件放在 static/hero/，此处写 URL 路径（以 / 开头）
@@ -146,14 +146,12 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
     lineOpacityDark = 0.1
 
   [params.hero]
-    title = 'AIOVTUE'
+    title = 'J4s'
     # motto：关闭一言时显示的格言；字符串=固定一句，数组=每次随机一条（打字机效果同一言）
     motto = [
       '雨是神的烟花',
       '山河远阔，人间烟火',
       '愿你眼中有光，心中有爱',
-      '慢慢来，也比较快',
-      '风停了，云还在走',
     ]
     randomUrls = true      # 随机切换背景
     enableHitokoto = true  # 一言 API 随机格言
@@ -161,24 +159,20 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
     typewriterSpeed = 80
     style = 'dot'          # 背景样式：dot / grid 等
     fixedImg = true
-    playerUrl = '/hero/player.mp4'
     urls = [
-      '/hero/tt3.png',
-      '/hero/tt1.png',
-      '/hero/tt2.png',
-      '/hero/sp1.mp4',
-      '/hero/hero-1.jpg', 
-      '/hero/hero-2.png', 
-      '/hero/hero-1.mp4',
-      '/hero/hero-2.mp4',
-      
+      'https://t.alcy.cc/fj/?i=1',
+      'https://t.alcy.cc/fj/?i=2',
+      'https://t.alcy.cc/fj/?i=3',
+      'https://t.alcy.cc/fj/?i=4',
+      'https://t.alcy.cc/fj/?i=5',
+      'https://t.alcy.cc/fj/?i=6',
+      'https://t.alcy.cc/fj/?i=7'
     ]
 
   # --- 页脚 ---
   [params.footer]
-    since = 2024           # 版权起始年
-    runtimeSince = '2024-01-01'   # 站点运行倒计时起点（YYYY-MM-DD）
-    icp = '<a href="https://icp.gov.moe/?keyword=20260258" target="_blank" rel="noopener">萌ICP备20260258号</a>'
+    since = 2026           # 版权起始年
+    runtimeSince = '2026-11-1'   # 站点运行倒计时起点（YYYY-MM-DD）
 
 # --- 首页公告栏（右侧域名列表）---
   # --- 首页文章列表布局 ---
@@ -199,7 +193,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
   
   
   [params.home]
-    layout = 'list'   # （cards，list，timeline）建议不要使用时间线模式，即timeline，不成熟样式
+    layout = 'cards'   # （cards，list，timeline）建议不要使用时间线模式，即timeline，不成熟样式
     desktopListColumns = 'single' # （single，double）list模式下单双列样式切换在此配置
     desktopListItemStyle = 'cards' # layout=list时，single模式下选择文章列表为list/cards样式
     mobileCardsLayout = 'list'     #移动端样式设置（list、stack）注意桌面端cards和list模式下移动端布局略有区别，具体自行切换查看和体验
@@ -219,41 +213,26 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
     featuredMobile = true       # 移动端推荐文章区
     
   [params.notice]
-    title = '公告栏'
+    title = '公告'
     rotateInterval = 5000  # 左侧随机文章轮播间隔（毫秒）
     [[params.notice.sections]]
-      label = '--- 主域名 ---'
-      lines = ['daily.yybb.us', 'day.yybb.us']
+      label = '域名列表'
+      lines = ['j4s.dpdns.org',' xifen.dpdns.org 暂未开始建设 !',' j4s.wuaze.com 将被废弃 !']
     [[params.notice.sections]]
-      label = '--- 这是公告 ---'
-      lines = ['公告在配置文件中修改哦']
+      label = '讯息'
+      lines = ['J4s酱正将j4s.wuaze.com迁移到这里，带来更快的访问速度！']
 
   # --- 侧栏 / Hero 社交图标（icon 为 Iconify 图标名）---
   [[params.social]]
-    name = 'RSS'
-    link = '/index.xml'  # Hugo 默认 RSS 路径
-    icon = 'ri:rss-line'
-    color = 'orange'
-  [[params.social]]
     name = 'GitHub'
-    link = 'https://github.com/AIOVTUE'
+    link = 'https://github.com/amaxyzdog'
     icon = 'ri:github-line'
     color = '#6e5494'
   [[params.social]]
-    name = '微信公众号'
-    link = '/hero/wxgzh.png'
-    icon = 'ri:wechat-2-line'
-    color = '#1AAD19'
-  [[params.social]]
     name = 'E-Mail'
-    link = 'mailto:x@yybb.us'
+    link = 'mailto:3986751656@qq.com'
     icon = 'ri:mail-line'
     color = '#8E71C1'
-  [[params.social]]
-    name = 'Travelling'
-    link = 'https://www.travellings.cn/go.html'
-    icon = 'ri:train-line'
-    color = '#8cb1b3'
 
   # --- 归档 / 标签页 ECharts 图表 ---
   [params.charts]
@@ -270,7 +249,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
       url = '/img/zfb.png'
       color = '#00A3EE'
     [[params.sponsor.methods]]
-      name = '微信支付'
+      name = '微信赞助'
       url = '/img/weix.png'
       color = '#2DC100'
 
@@ -309,7 +288,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
   # visitorEnable：文章访问量统计（需 provider=twikoo 且已配置 envId）
   # COMMENT_PLACEHOLDER 请在 Twikoo 管理后台「配置」中设置
   [params.twikoo]
-    envId = 'https://your-twikoo-url'
+    envId = 'https://j4s.netlify.app/.netlify/functions/twikoo'
     visitorEnable = true   # 开启文章访问数量统计，基于twikoo
 
   # --- 留言页信封动画图片（文件在 static/envelope/）---
@@ -325,8 +304,8 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
 
   # --- 顶栏标题 ---
   [params.navbar]
-    titleParts = ['AIOVTUE-', '雪']   # 顶栏主标题分段（可产生动画效果）
-    subTitle = '雨是神的烟花'
+    titleParts = ['J4s', '枫']   # 顶栏主标题分段（可产生动画效果）
+    subTitle = '“枫”为曾用名'
     offset = 0
 
     # 移动端下滑隐藏顶栏（默认首页不生效，设 includeHome = true 则全站含首页生效）
@@ -360,80 +339,52 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
   [[params.menu.main]]
     name = '首页'
     url = '/'
-    icon = 'ant-design:home-filled'
+    icon = 'ant-design:home-twotone'
     weight = 1
   [[params.menu.main]]
     name = '文章'
     url = '/categories/'
-    icon = 'ant-design:read-filled'
+    icon = 'ant-design:book-twotone'
     navGroup = 'posts'
     weight = 2
     [[params.menu.main.items]]
       name = '分类'
       url = '/categories/'
-      icon = 'ant-design:appstore-filled'
+      icon = 'ant-design:appstore-twotone'
     [[params.menu.main.items]]
       name = '归档'
       url = '/archives/'
-      icon = 'ant-design:container-filled'
+      icon = 'ant-design:container-twotone'
     [[params.menu.main.items]]
       name = '标签'
       url = '/tags/'
-      icon = 'ant-design:tags-filled'
-  [[params.menu.main]]
-    name = '个人'
-    url = '/moments/'
-    icon = 'ant-design:user-outlined'
-    navGroup = 'personal'
-    weight = 3
-    [[params.menu.main.items]]
-      name = '相册'
-      url = '/gallery/'
-      icon = 'ant-design:picture-filled'
-    [[params.menu.main.items]]
-      name = '动态'
-      url = '/moments/'
-      icon = 'ant-design:compass-filled'
-    [[params.menu.main.items]]
-      name = '追番'
-      url = '/bangumi/'
-      icon = 'mdi:television-play'
-  [[params.menu.main]]
-    name = '留言'
-    url = '/comment/'
-    icon = 'ant-design:message-filled'
-    weight = 4
-  [[params.menu.main]]
-    name = '友链'
-    url = '/links/'
-    icon = 'ant-design:global-outlined'
-    weight = 5
+      icon = 'ant-design:tags-twotone'
   [[params.menu.main]]
     name = '关于'
     url = '/about/'
-    icon = 'ant-design:idcard-filled'
+    icon = 'ant-design:idcard-twotone'
     weight = 6
 
 # --- 音乐播放器（APlayer + Meting.js）---
   # enable：是否显示播放器；单页可在 front matter 写 musicPlayer: false 关闭
   [params.music]
-    enable = true
-    position = 'right'        # left | right，按钮默认停靠左下或右下
+    enable = false
+    position = 'left'        # left | right，按钮默认停靠左下或右下
     
     # apis：按顺序尝试，前一个不可用时自动切换下一个，默认不需要动
     apis = [
-      'https://api.i-meto.com/meting/api?server=:server&type=:type&id=:id&r=:r',
-      'https://api.injahow.cn/meting/?server=:server&type=:type&id=:id',
-      'https://meting.qjqq.cn/?server=:server&type=:type&id=:id',
+      'https://msapi.awup.cn/?server=:server&type=:type&id=:id',
+      'https://meting.mikus.ink/api?server=:server&type=:type&id=:id',
+      
     ]
     server = 'netease'
     type = 'playlist'                             # playlist | song | album | artist
-    id = '2580064383'                             # 网易云歌单/歌曲 ID
+    id = '14143124339'                             # 网易云歌单/歌曲 ID
 
   # --- Live2D 看板娘（左下角 Live2D 角色）---
   # enable：是否启用；单页可在 front matter 写 live2d: false 关闭
   [params.live2d]
-    enable = true
+    enable = false
     minWidth = 768                                # 低于此宽度不加载
     drag = false
     tools = ['hitokoto', 'asteroids', 'switch-model', 'switch-texture', 'photo', 'info', 'quit']
@@ -467,7 +418,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
   # mobile：触摸设备或宽度 ≤768px 是否启用（默认 false）
   # randomize：打散雨/樱花/雪/蝴蝶轨迹；萤火虫不受此项影响，始终仅向上飘
   [params.effects]
-    enable = true
+    enable = false
     type = 'firefly'
     randomTypes = ['sakura', 'rain', 'snow', 'firefly', 'butterfly']
     randomize = true                                # 打散位置/速度/轨迹，避免过于规律
