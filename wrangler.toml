@@ -2,7 +2,10 @@
 # 文档：https://developers.cloudflare.com/pages/framework-guides/deploy-a-hugo-site/
 name = "j4s-new-web"
 compatibility_date = "2026-10-25"
+
+[assets]
 directory = "./public"
+not_found_handling = "404-page"
 
 # 在 Cloudflare Dashboard → Build 中设置：
 #   Build command: pnpm run build
