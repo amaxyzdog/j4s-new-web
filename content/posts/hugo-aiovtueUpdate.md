@@ -3,7 +3,7 @@ title: hugo主题aiovtue迎来大更新
 description: 对hugo-aiovtue主题进行了多出优化和功能新增
 date: 2026-07-03
 lastmod: 2026-07-03
-cover: /hero/sp1.mp4
+cover: /hero/tt3.png
 categories: 开源
 tags:
   - 博客
